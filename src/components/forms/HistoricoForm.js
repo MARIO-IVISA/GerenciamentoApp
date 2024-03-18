@@ -47,7 +47,7 @@ export default function HistoricoForm() {
                 <tbody>
                     {historico.map((item, index) => (
                         <tr key={index}>
-                            <td>{item.curso.nome}</td>
+                            <td>{item.curso.nome} - {item.curso.descricao}</td>
                             <td>{getStatusText(item.status)}</td>
                             <td>{item.nota}</td>
                         </tr>
