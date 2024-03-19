@@ -14,13 +14,10 @@ Permite cadastrar novos alunos na plataforma.
 ### Cadastro e Listagem de Cursos
 Integra-se ao sistema de gerenciamento de cursos [CursosApi](https://github.com/MARIO-IVISA/CursosApi) para cadastrar e listar cursos disponíveis.
 
-### Matrícula de Alunos
-Utiliza a função [FunctionMatricula](https://github.com/MARIO-IVISA/FunctionMatricula) para enviar as matrículas para o RabbitMQ.
+### Processamento de Emails
+O processamento de emails é realizado pelo [SecretariaWorker](https://github.com/MARIO-IVISA/SecretariaWorker) que consome as mensagens do azure service bus o envio de email de acorco com o status do aluno.
 
-### Processamento de Matrículas
-O processamento de matrículas é realizado pelo [SecretariaWorker](https://github.com/MARIO-IVISA/SecretariaWorker) que consome as mensagens do RabbitMQ e realiza as operações necessárias.
-
-### Atualização de Notas e Histórico de Alunos
+###  Matrícula de Alunos, Atualização de Notas e Histórico de Alunos
 Utiliza a [SecretariaApi](https://github.com/MARIO-IVISA/SecretariaApi) para atualizar notas dos alunos e acessar o histórico de matrículas.
 
 ### Listagem de Alunos Inscritos em Cursos
