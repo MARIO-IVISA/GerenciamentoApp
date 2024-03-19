@@ -41,7 +41,7 @@ export default function Inicio() {
     if(result == "Disponível")
     {
       var result = await blobServices.matricularAluno(Matricula)
-      if(result.Value == "Mensagem Service: Aluno cadastrado"){
+      if(result.message === "Matricula realizada com sucesso!"){
         alert("Aluno matriculado com sucesso");
       }
       else

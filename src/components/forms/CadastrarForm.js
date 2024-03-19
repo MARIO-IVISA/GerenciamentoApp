@@ -38,7 +38,7 @@ export default function CadastrarForm() {
         };
 
         services.postUsuario(usuarioData)
-        window.location.href = '/';
+        // window.location.href = '/';
     };
 
     return (

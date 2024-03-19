@@ -61,8 +61,10 @@ export default function HistoricoForm() {
 function getStatusText(status) {
     switch (status) {
         case 0:
-            return 'Em andamento';
+            return 'Pendente ';
         case 1:
+            return 'Aprovado';
+        case 2:
             return 'Concluído';
         default:
             return '';
